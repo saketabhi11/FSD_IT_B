@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab Price Comparator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Cab Price Comparator</h2>
+    <form id="cabForm">
+        <input type="text" id="fromLocation" placeholder="From Location" required>
+        <input type="text" id="toLocation" placeholder="To Location" required>
+        <button type="submit">Compare Prices</button>
+    </form>
+
+    <table id="resultsTable" style="display:none;">
+        <thead>
+        <tr>
+            <th>Service</th>
+            <th>Price</th>
+            <th>Book Now</th>
+        </tr>
+        </thead>
+        <tbody id="resultsBody"></tbody>
+    </table>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
